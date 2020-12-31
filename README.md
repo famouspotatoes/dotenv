@@ -1,4 +1,14 @@
-# dotenv
+# famouspotatoes/dotenv
+
+This is fork executes `dotenv.config()` on import instead of exposing the function to be called later.
+
+This change is important because it allows for the env variables to be loaded onto `process.env` before anything else is run.
+
+This is not necessarily true if you have to wait to call `dotenv.config()` in your own project, even if it is the first thing you do in your entry file.
+
+This might be a TypeScript specific solution; I'm not 100% sure. 
+
+#dotenv
 
 <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png" alt="dotenv" align="right" />
 
